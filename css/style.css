@@ -1,0 +1,32 @@
+h1 {
+    font-size: 80px;
+}
+
+.bg_color_container {
+    background-color: #083b4c;
+}
+
+.bg_color_standard {
+    background-color: #1389b2;
+}
+
+.bg_color_fizz {
+    background-color: #0bd6a1;
+}
+
+.bg_color_buzz {
+    background-color: #ffd166;
+}
+
+.bg_color_fizz_buzz {
+    background-color: #f0466f;
+}
+
+.row_h {
+    height: 100px;
+}
+
+.col_w_and_h {
+    height: 100%;
+    width: 100% / 7;
+}
