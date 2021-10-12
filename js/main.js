@@ -31,13 +31,16 @@ for (let i = 1; i <= 100; i++) {
     col.classList.add("col", "col_w");
 
     const square = document.createElement("div");
-    square.classList.add("ratio", "ratio-1x1", "text-center", "w-100", "position-relative", bgColor);
+    square.classList.add("ratio", "ratio-1x1", bgColor);
+
+    const squareTextContainer = document.createElement("div");
 
     const squareText = document.createElement("span");
-    squareText.classList.add("span_center")
+    squareText.classList.add("span_center_and_font")
     squareText.textContent = text;
 
     row.append(col);
     col.append(square);
-    square.append(squareText);
+    square.append(squareTextContainer)
+    squareTextContainer.append(squareText);
 }
