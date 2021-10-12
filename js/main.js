@@ -4,7 +4,7 @@ const container = document.createElement("div");
 container.classList.add("container");
 
 const row = document.createElement("div");
-row.classList.add("row", "g-3", "flex-wrap", "row-cols-6");
+row.classList.add("row", "g-5", "flex-wrap");
 
 containerFluid.append(container);
 container.append(row);
@@ -28,10 +28,10 @@ for (let i = 1; i <= 100; i++) {
     }
 
     const col = document.createElement("div");
-    col.classList.add("col"/* , "col_w_and_h" */);
+    col.classList.add("col", "col_w");
 
     const square = document.createElement("div");
-    square.classList.add("ratio", "ratio-1x1", "text-center", "w-100", "postion-relative", bgColor);
+    square.classList.add("ratio", "ratio-1x1", "text-center", "w-100", "position-relative", bgColor);
 
     const squareText = document.createElement("span");
     squareText.classList.add("span_center")
