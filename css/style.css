@@ -22,11 +22,14 @@ h1 {
     background-color: #f0466f;
 }
 
-.row_h {
-    height: 100px;
-}
-
 .col_w_and_h {
     height: 100%;
     width: 100% / 7;
+}
+
+.span_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
