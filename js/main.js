@@ -6,9 +6,6 @@ container.classList.add("container");
 const row = document.createElement("div");
 row.classList.add("row", "g-5", "flex-wrap");
 
-containerFluid.append(container);
-container.append(row);
-
 for (let i = 1; i <= 100; i++) {
     let bgColor = "";
     let text = "";
@@ -39,8 +36,12 @@ for (let i = 1; i <= 100; i++) {
     squareText.classList.add("span_center_and_font")
     squareText.textContent = text;
 
-    row.append(col);
-    col.append(square);
-    square.append(squareTextContainer)
     squareTextContainer.append(squareText);
+    square.append(squareTextContainer)
+    col.append(square);
+    row.append(col);
 }
+
+container.append(row);
+containerFluid.append(container);
+
